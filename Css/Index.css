@@ -1,0 +1,19 @@
+.#heading1{
+  color:brown;
+}
+.login-form{
+  display:flex;
+
+}
+.login-input{
+  border:1px thick black;
+}
+#login-button {
+  color:aquamarine;
+  :hove{
+     cursor:pointer;
+  }
+  :active {
+    background-color:aqua;
+  }
+}
