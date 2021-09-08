@@ -1,19 +1,28 @@
 .#heading1{
   color:brown;
 }
-.login-form{
+#login-form #Sign-up-form{
   display:flex;
+  background-color:aquamarine;
 
 }
-.login-input{
+.login-input {
+  display:block;
+  background-color:white;
   border:1px thick black;
 }
 #login-button {
-  color:aquamarine;
-  :hove{
-     cursor:pointer;
-  }
+  padding:2em;
+ }
+a{
+  margin:2px;
+  padding:2em;
+  border:1px solid black;
+  text-decoration:none;
+  :hover{
+    cursor:pointer;
+   }
   :active {
     background-color:aqua;
-  }
+   }
 }

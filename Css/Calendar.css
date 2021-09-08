@@ -1,11 +1,19 @@
 #Calendar-heading{
-
+  padding:2em;
+  font-weight:bold;
 }
 .Calendar-hours{
   display:flex;
 }
 .Calendar-hour{
-  
+  display:block;
   border:1px solid black;
   background-color:burlywood;
 }
+:hover{
+  cursor:pointer;
+}
+:active{
+    color:aqua;
+  }
+
