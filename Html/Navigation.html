@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <!----this page has internal css -->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation</title>
+  <style>
+    #Navigation-header {
+      display:flex;
+    }
+
+    #Navigation-menu {
+      justify-content:flex-start;
+      margin:20px;
+      padding:2em;
+    }
+
+    #Navigation-menu a {}
+
+    #logout-button {
+      justify-content:flex-end;
+    }
+
+    #logout-button #Navigation-menu a {
+      text-decoration: none;
+    }
+
+    :hover {
+      cursor: pointer;
+    }
+
+    :active {
+      color: blue;
+    }
+  </style>
 </head>
+
 <body>
-  <div>
-    <div>
+  <div id="Navigation-header">
+    <div id="Navigation-menu">
       <a src="../Calendar.html">Calendar</a>
       <a src="../Meeting.html">Meeting s</a>
       <a src="../Teams.html">Team</a>
     </div>
-    <div>
-      <button>logout</button>
+    <div id="logout-button">
+      <a href="../Html/Index.html">Logout</a>
+      <!--<button>logout</button>-->
     </div>
   </div>
-  
+
 </body>
+
 </html>
