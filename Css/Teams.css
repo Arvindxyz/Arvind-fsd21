@@ -1,0 +1,15 @@
+#Navigation-menu{
+  margin:20px;
+  padding:2em;
+  display:flex;
+}
+#Navigation-button {
+  justify-content:flex-end;
+  padding:2em;
+}
+#Navigation-bar{
+  background-color:aquamarine;
+}
+a:active {
+  background-color:aqua;
+}
