@@ -6,6 +6,9 @@
 #heading1{
   color:brown;
 }
+#Signup{
+  display:none;
+}
 #login-form #Sign-up-form{
   display:flex;
   background-color:aquamarine;
