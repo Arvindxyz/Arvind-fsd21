@@ -4,6 +4,7 @@
 #heading1{
   display:flex;
   justify-content: center;
+  background-color:rgb(250,150,250);
   color:brown;
 }
 #Signup{
@@ -11,7 +12,6 @@
 }
 .login-input {
   width:100%;
-  background-color:white;
   border:1px thick black;
 }
 #login-button {
