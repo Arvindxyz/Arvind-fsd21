@@ -1,9 +1,10 @@
 #login-div{
-  display:flexbox;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 }
 #heading1{
-  display:flex;
-  justify-content: center;
   background-color:rgb(250,150,250);
   color:brown;
 }
@@ -15,8 +16,7 @@
   border:1px thick black;
 }
 #login-button {
-  display:flex;
-  justify-content:center;
+
  }
 a{
   margin:2px;
