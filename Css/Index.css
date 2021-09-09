@@ -1,21 +1,16 @@
 #login-div{
   display:flexbox;
-  justify-content:center;
-  align-items:center;
 }
 #heading1{
+  display:flex;
+  justify-content: center;
   color:brown;
 }
 #Signup{
   display:none;
 }
-#login-form #Sign-up-form{
-  display:flex;
-  background-color:aquamarine;
-
-}
 .login-input {
-  flex-basis:100%;
+  width:100%;
   background-color:white;
   border:1px thick black;
 }
