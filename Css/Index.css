@@ -15,14 +15,13 @@
 
 }
 .login-input {
-  display:block;
+  flex-basis:100%;
   background-color:white;
   border:1px thick black;
 }
 #login-button {
   display:flex;
   justify-content:center;
-  padding:2em;
  }
 a{
   margin:2px;
