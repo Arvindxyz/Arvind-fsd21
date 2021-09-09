@@ -1,4 +1,9 @@
-.#heading1{
+#login-div{
+  display:flexbox;
+  justify-content:center;
+  align-items:center;
+}
+#heading1{
   color:brown;
 }
 #login-form #Sign-up-form{
