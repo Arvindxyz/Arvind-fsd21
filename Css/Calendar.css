@@ -11,7 +11,10 @@
   margin: 5px;
   padding: 5px;
 }
-
+#Calender-area{
+  display:flex;
+  flex-direction:column;
+}
 #Calendar-heading {
   padding: 2em;
   font-weight: bold;
