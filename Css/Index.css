@@ -14,6 +14,8 @@ body{
 }
 #heading1{
   //background-color:rgb(250,150,250);
+  margin:5px;
+  padding:5px;
   color:brown;
   display:flex;
   justify-content:center;
@@ -23,7 +25,7 @@ body{
   flex-direction:column;
 }
 .login-input {
-  margin:px;
+  margin:5px;
   padding:5px;
   width:100%;
   border:1px thick black;
@@ -32,12 +34,14 @@ body{
   align-self:center;
 }
 #forgot-password {
+  margin:5px;
   padding:5px;
+  font-size:13px;
   align-self:flex-end;
 }
 a{
-  margin:2px;
-  padding:2em;
+  margin:5px;
+  padding:5px;
   border:1px solid black;
   text-decoration:none;
   :hover{
