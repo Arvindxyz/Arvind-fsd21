@@ -30,7 +30,7 @@ body{
   width:100%;
   border:1px thick black;
 }
-#login-button {
+.login-button {
   align-self:center;
 }
 #forgot-password {
@@ -50,4 +50,9 @@ a{
   :active {
     background-color:aqua;
    }
+}
+#Signup{}
+#Signup-form{
+  display:flex;
+  flex-direction: column;
 }
