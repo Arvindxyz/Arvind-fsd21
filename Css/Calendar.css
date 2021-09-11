@@ -16,6 +16,11 @@
   padding: 2em;
   font-weight: bold;
 }
+#Calendar-date{
+  display:flex;
+  justify-content:space-between;
+}
+
 .Calendar-hours {
   display: flex;
   flex-direction: column;
