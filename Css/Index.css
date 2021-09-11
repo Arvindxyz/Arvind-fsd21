@@ -1,28 +1,40 @@
 body{
+  margin:0;
   background-color: aquamarine;
   display:flex;
   justify-content:center;
 }
 #login-div{
+  margin:20px;
+  padding:5px;
+  background-color: aqua;
   display:flex;
   justify-content:center;
-  align-items:center;
   flex-direction:column;
 }
 #heading1{
-  background-color:rgb(250,150,250);
+  //background-color:rgb(250,150,250);
   color:brown;
+  display:flex;
+  justify-content:center;
 }
-#Signup{
-  display:none;
+#login-form{
+  display:flex;
+  flex-direction:column;
 }
 .login-input {
+  margin:px;
+  padding:5px;
   width:100%;
   border:1px thick black;
 }
 #login-button {
-
- }
+  align-self:center;
+}
+#forgot-password {
+  padding:5px;
+  align-self:flex-end;
+}
 a{
   margin:2px;
   padding:2em;
