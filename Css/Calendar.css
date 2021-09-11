@@ -1,33 +1,37 @@
-#Navigation-header{
-  display:flex;
+#Navigation-header {
+  display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 #Navigation-menu {
-  margin:5px;
-  padding:5px;
+  margin: 5px;
+  padding: 5px;
 }
-#User-menu{
-  margin:5px;
-  padding:5px;
+#User-menu {
+  margin: 5px;
+  padding: 5px;
 }
 
-#Calendar-heading{
-  padding:2em;
-  font-weight:bold;
+#Calendar-heading {
+  padding: 2em;
+  font-weight: bold;
 }
-.Calendar-hours{
-  display:flex;
+.Calendar-hours {
+  display: flex;
+  flex-direction: column;
 }
-.Calendar-hour{
-  display:block;
-  border:1px solid black;
-  background-color:burlywood;
+.Calendar-hour {
+  border: 1px solid black;
+  background-color: burlywood;
 }
-:hover{
-  cursor:pointer;
-}
-:active{
-    color:aqua;
+a {
+  border: 1px solid black;
+  margin:5px;
+  padding:5px;
+  :hover {
+    cursor: pointer;
   }
-
+  :active {
+    color: aqua;
+  }
+}
