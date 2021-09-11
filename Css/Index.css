@@ -3,10 +3,12 @@ body{
   background-color: aquamarine;
   display:flex;
   justify-content:center;
+  flex-direction:column;
 }
 #login-div{
   margin:20px;
   padding:5px;
+  width:100%;
   background-color: aqua;
   display:flex;
   justify-content:center;
@@ -31,7 +33,8 @@ body{
   border:1px thick black;
 }
 .login-button {
-  align-self:center;
+  display:flex;
+  justify-content:center;
 }
 #forgot-password {
   margin:5px;
@@ -56,3 +59,4 @@ a{
   display:flex;
   flex-direction: column;
 }
+.hide{display:none;}
