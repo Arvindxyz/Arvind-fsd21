@@ -9,30 +9,39 @@
   <title>Navigation</title>
   <style>
     #Navigation-header {
-      display:flex;
+      display: flex;
+      justify-content:space-between;
     }
 
     #Navigation-menu {
-      justify-content:flex-start;
-      margin:20px;
-      padding:2em;
+      margin: 5px;
+      padding: 5px;
     }
-
+   #User-menu{
+     display:flex;
+     justify-content:flex-end;
+   }
     #Navigation-menu a {}
 
     #logout-button {
-      justify-content:flex-end;
+      justify-content: flex-end;
     }
 
     #logout-button #Navigation-menu a {
       text-decoration: none;
     }
 
-a:hover {
+    a {
+      margin: 5px;
+      padding: 5px;
+      border: 1px solid black;
+    }
+
+    a:hover {
       cursor: pointer;
     }
 
-a:active {
+    a:active {
       color: aqua;
     }
   </style>
@@ -45,7 +54,8 @@ a:active {
       <a src="../Meeting.html">Meeting s</a>
       <a src="../Teams.html">Team</a>
     </div>
-    <div id="logout-button">
+    <div id="User-menu">
+      <span id="Present-user"></span>
       <a href="../Html/Index.html">Logout</a>
       <!--<button>logout</button>-->
     </div>
