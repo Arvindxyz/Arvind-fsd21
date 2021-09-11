@@ -1,3 +1,8 @@
+body{
+  background-color: aquamarine;
+  display:flex;
+  justify-content:center;
+}
 #login-div{
   display:flex;
   justify-content:center;
