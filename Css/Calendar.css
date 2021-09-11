@@ -1,3 +1,17 @@
+#Navigation-header{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+#Navigation-menu {
+  margin:5px;
+  padding:5px;
+}
+#User-menu{
+  margin:5px;
+  padding:5px;
+}
+
 #Calendar-heading{
   padding:2em;
   font-weight:bold;
