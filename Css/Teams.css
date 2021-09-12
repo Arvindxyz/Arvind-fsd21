@@ -13,3 +13,20 @@
 a:active {
   background-color:aqua;
 }
+
+.Team-display{
+    border:1px solid black;
+    margin:5px;
+    padding:1em;
+}
+.Team-name{}
+.Team-email{}
+.Quit-team{
+    background-color:red;
+    border-radius:1em;
+}
+.Team-members{}
+.Add-member-btn{
+    background-color:aqua;
+    border-radius:1em;
+}
