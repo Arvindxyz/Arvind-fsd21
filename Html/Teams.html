@@ -1,82 +1,103 @@
-<<!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams</title>
-    <link rel="stylesheet" src="../Css/Teams.css">
-    </link>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teams</title>
+  <link rel="stylesheet" src="../Css/Teams.css">
+  </link>
+</head>
 
-  <body>
-    <header>
-      <nav>
-        <div id="Navigation-menu">
-          <a href="../Html/Calendar.html" alt="Try after sometime">Calendar</a>
-          <a href="../Html/Meeting.html" alt="Try after sometime">Meeting</a>
-          <a href="">Teams</a>
-        </div>
-        <div id="logout-button">
-          <a href="../Html/Index.html">Logout</a>
-        </div>
-      </nav>
-    </header>
-    <div id="Teams-area">
-      <div class="Team-display">
-        <h3 class="Team-name">Customer acquisition campaign</h3>
-        <h4 class="Team-email">@example.com</h4>
-        <p>Teams to come up with strategies to win over customer at the end of FY21</p>
-        <button class="Quit-team">Excuse yourself</button>
-        <hr />
-        <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
-        <label for="select"></label>
+<body>
+  <header>
+    <nav>
+      <div id="Navigation-menu">
+        <a href="../Html/Calendar.html" alt="Try after sometime">Calendar</a>
+        <a href="../Html/Meeting.html" alt="Try after sometime">Meeting</a>
+        <a href="">Teams</a>
+      </div>
+      <div id="logout-button">
+        <a href="../Html/Index.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+  <div id="Teams-area">
+    <div class="Team-display">
+      <h3 class="Team-name">Customer acquisition campaign</h3>
+      <h4 class="Team-email">@example.com</h4>
+      <p>Teams to come up with strategies to win over customer at the end of FY21</p>
+      <button class="Quit-team">Excuse yourself</button>
+      <hr />
+      <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
+      <label for="select"></label>
 
-        <select name="member" id="select">
+      <select name="member" id="select">
          <option value="">option 1</option>
          <option value="">option 2</option>
          <option value="">option 3</option>
          <option value="">option 4</option>
         </select>
-        <button class="Add-member-btn">Add</button>
-      </div>
-      <div class="Team-display">
-        <h3 class="Team-name">Customer acquisition campaign</h3>
-        <h4 class="Team-email">@example.com</h4>
-        <p>Teams to come up with strategies to win over customer at the end of FY21</p>
-        <button class="Quit-team">Excuse yourself</button>
-        <hr />
-        <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
-        <label for="select"></label>
-
-        <select name="member" id="select">
-         <option value="">option 1</option>
-         <option value="">option 2</option>
-         <option value="">option 3</option>
-         <option value="">option 4</option>
-        </select>
-        <button class="Add-member-btn">Add</button>
-      </div>
-      <div class="Team-display">
-        <h3 class="Team-name">Customer acquisition campaign</h3>
-        <h4 class="Team-email">@example.com</h4>
-        <p>Teams to come up with strategies to win over customer at the end of FY21</p>
-        <button class="Quit-team">Excuse yourself</button>
-        <hr />
-        <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
-        <label for="select"></label>
-
-        <select name="member" id="select">
-         <option value="">option 1</option>
-         <option value="">option 2</option>
-         <option value="">option 3</option>
-         <option value="">option 4</option>
-        </select>
-        <button class="Add-member-btn">Add</button>
-      </div>
-
+      <button class="Add-member-btn">Add</button>
     </div>
-  </body>
+    <div class="Team-display">
+      <h3 class="Team-name">Customer acquisition campaign</h3>
+      <h4 class="Team-email">@example.com</h4>
+      <p>Teams to come up with strategies to win over customer at the end of FY21</p>
+      <button class="Quit-team">Excuse yourself</button>
+      <hr />
+      <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
+      <label for="select"></label>
 
-  </html>
+      <select name="member" id="select">
+         <option value="">option 1</option>
+         <option value="">option 2</option>
+         <option value="">option 3</option>
+         <option value="">option 4</option>
+        </select>
+      <button class="Add-member-btn">Add</button>
+    </div>
+    <div class="Team-display">
+      <h3 class="Team-name">Customer acquisition campaign</h3>
+      <h4 class="Team-email">@example.com</h4>
+      <p>Teams to come up with strategies to win over customer at the end of FY21</p>
+      <button class="Quit-team">Excuse yourself</button>
+      <hr />
+      <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
+      <label for="select"></label>
+
+      <select name="member" id="select">
+         <option value="">option 1</option>
+         <option value="">option 2</option>
+         <option value="">option 3</option>
+         <option value="">option 4</option>
+        </select>
+      <button class="Add-member-btn">Add</button>
+    </div>
+    <div class="Team-display" id="ad"><a href="#Add-team">+</a></div>
+
+    <div id="Add-team">
+      <form id="Add-team-form">
+        <h2>Create Team</h2>
+        <label class="Team-input-label">Name<input></label>
+        <label class="Team-input-label">Short name<input></label>
+        <label class="Team-input-label">Description<input placeholder="text"></label>
+        <br/>
+        <label for="select" class="Team-input-label">Add members<br>
+         <select name="member" id="select">
+           <option value="">option 1</option>
+           <option value="">option 2</option>
+           <option value="">option 3</option>
+           <option value="">option 4</option>
+         </select>
+       <button class="Team-input-label">Add</button>
+       </label>
+        <br/>
+        <button class="Team-input-label">Create</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
