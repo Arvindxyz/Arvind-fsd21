@@ -1,0 +1,58 @@
+#Navigation-menu {
+  margin: 20px;
+  padding: 2em;
+  display: flex;
+}
+#Navigation-button {
+  justify-content: flex-end;
+  padding: 2em;
+}
+#Navigation-bar {
+  background-color: aquamarine;
+}
+a:active {
+  background-color: aqua;
+}
+/* team display area      */
+.Team-display {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 1em;
+}
+.Team-name {
+}
+.Team-email {
+}
+.Quit-team {
+  background-color: red;
+  border-radius: 1em;
+}
+.Team-members {
+}
+.Add-member-btn {
+  background-color: aqua;
+  border-radius: 1em;
+}
+/*add team div and  form  */
+#Add-team {
+  display: none;
+  background-color: aquamarine;
+  border: 1px solid red;
+}
+#Add-team:target {
+  display: block;
+  top: 30px;
+  left: 30px;
+  position: absolute;
+  width: 100%;
+}
+#Add-team-form {
+  margin: 2em;
+  padding: 2em;
+}
+.Team-input-label {
+  margin-bottom: 10px;
+}
+input {
+  margin-bottom: 10px;
+}
