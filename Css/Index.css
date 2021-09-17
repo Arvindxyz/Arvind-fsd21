@@ -1,68 +1,85 @@
 body{
   margin:0;
-  background-color: aquamarine;
-  display:flex;
-  align-items:center;
-  flex-direction:column;
+  padding:0;
+  background-color:rgb(0,255,204);
 }
-#login-div{
-  margin:20px;
-  padding:5px;
+#Login-div{
+  padding:2em;
   width:100%;
-  background-color: aquamarine;
   display:flex;
-  align-items:center;
-  flex-direction:column;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
-#heading1{
-  //background-color:rgb(250,150,250);
-  margin:5px;
-  padding:5px;
-  color:brown;
+.Title{
+  text-align: center;
+}
+
+#Login-form{
   display:flex;
-  justify-content:center;
+  flex-flow: column nowrap;
 }
-#login-form{
-  display:flex;
-  flex-direction:column;
+.Login-input{
+  margin-bottom:1em;
 }
-.login-input {
-  margin:5px;
-  padding:5px;
-  width:100%;
-  border:1px thick black;
+#Login-btn{
+  background-color:rgb(200,200,200);
+  text-align: center;
+   border-radius:20px;
+  :hover{cursor:pointer;}
+  :active {color: blue;}
 }
-.login-button {
-  display:flex;
-  justify-content:center;
+a{ 
+ text-decoration:none;
+ :hover{
+   cursor:pointer;
+ }
+ :action{
+   color:aquamarine;
+ }
 }
-#forgot-password {
-  margin:5px;
-  padding:5px;
+#Small-font{
   font-size:13px;
-  align-self:flex-end;
+  display: flex;
+  justify-content:space-between;
 }
-a{
-  margin:5px;
-  padding:5px;
-  border:1px solid black;
-  text-decoration:none;
-  :hover{
-    cursor:pointer;
-   }
-  :active {
-    background-color:aqua;
-   }
+#Forgot-passward-btn{}
+#Signup-div{
+  display:none;
+  position:relative;
 }
-#Signup{display:none;}
-#Signup-form{
-  display:flex;
-  flex-direction: column;
+#Close-btn{
+  position: absolute;
+  top:10px;
+  right:10px;
+  font-weight:bold;
+  font-size:30px;
 }
-#Signup:target {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+#Signup-div:target{
+  background-color: aquamarine;
+  position: absolute;
+  top:0;
   width:100%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
-.hide{display:none
+#Signup-form{
+  padding:2em;
+  display:flex;
+  flex-flow: column nowrap;
+  //background-color:rgb(160,200,160);
+}
+#Signup-btn{
+  background-color:rgb(200,200,200);
+  text-align: center;
+  border-radius:20px;
+}
+@media (min-width:600px){
+  body{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}
+
+

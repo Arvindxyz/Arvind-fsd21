@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="Login-div">
+      <h1 class="Title">Meeting app</h1>
+      <form id="Login-form" name="loginform" action="">
+        <label for="LoginEmail">Enter your email</label>
+        <input
+          class="Login-input"
+          id="LoginEmail"
+          type="email"
+          placeholder="Email"
+          name="LoginEmail"
+          autofocus
+        />
+        <label for="LoginPassward">Enter your password</label>
+        <input
+          class="Login-input"
+          id="LoginPassward"
+          type="password"
+          placeholder="password"
+          name="LoginPassward"
+        />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-compatibl" content="EI-edge">
-  <link rel="stylesheet" src="../Css/Index.css" type="text/css">
-
-</head>
-
-<body>
-  <div id="login-div">
-    <h1 id="heading1">Meeting app <h1>
-        <form id="login-form">
-          <input type="email" placeholder="Email" class="login-input"/>
-          <input type="password" placeholder="Password" class="login-input"/>
-          <p class="login-input" class="login-button">
-            <a href="../Html/Calendar.html" alt="login button">Login </a>
-          </p>
-        </form>
-        <div id="forgot-password"><a href="" alt="Try after sometime">forgot password</a></div>
-        <p>New user <a href="#Sign-up">Sign up</a></p>
-  </div>
-
-
-  <div id="Signup">
-    <form id="Signup-form">
-      <input type="text" placeholder="Enter your full name" class="login-input">
-      <input type="email" placeholder="Email" class="login-input">
-      <input type="password" placeholder="password" class="login-input">
-      <input type="password" placeholder="confirm your password" class="login-input">
-      <p class="login-input" class="login-button"><a href="../Html/Calendar.html" alt="Signup">Sign up</a></p>
-    </form>
-  </div>
-</body>
-
+        <a class="Login-input" id="Login-btn" type="submit">login </a>
+      </form>
+      <div id="Small-font">
+        <a href="" alt="Signin" id="Forgot-passward-btn">forgot password</a>
+        <a href="#Signup-div">New User - signup</a>
+      </div>
+    </div>
+    <div id="Signup-div">
+      <h2 class="Title">Meeting app</h2>
+      <a href="#" id="Close-btn">&times;</a>
+      <form id="Signup-form">
+        <label for="Signup-email">Enter your email</label>
+        <input
+          id="Signup-email"
+          class="Login-input"
+          type="email"
+          placeholder="Email"
+        />
+        <label for="Signup-passward">Enter password</label>
+        <input
+          id="Signup-passward"
+          class="Login-input"
+          type="password"
+          placeholder="password"
+        />
+        <label for="Signup-Cpassward">Confirm password</label>
+        <input
+          id="Signup-Cpassward"
+          class="Login-input"
+          type="password"
+          placeholder="Confirm password"
+        />
+        <a href="#Login-div" id="Signup-btn" type="submit">Signup</a>
+      </form>
+      <a href=""></a>
+    </div>
+  </body>
 </html>
