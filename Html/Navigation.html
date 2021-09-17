@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-compatibl" content="EI-edge" />
     <title>Navigation</title>
-    
+
     <style>
       body {
         margin: 0;
         padding: 0;
       }
-      *{
-        box-sizing:border-box;
+      * {
+        box-sizing: border-box;
       }
       #Navigation-bar {
         background-color: rgb(150, 150, 150);
@@ -34,26 +34,6 @@
         width: 100%;
         // background-color:red;
       }
-      
-      @media (min-width: 660px) {
-        #Navigation-bar {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-between;
-        }  
-        #Mobile-user,#Lmobile {
-          display: none;
-        }
-        #Navigation-menu {
-          display: flex;
-          flex-flow: row nowrap;
-          // background-color:blue;
-        }
-        #User-menu {
-          display: flex;
-        }
-      }
-
       #Page-links-btn {
         padding: 1em;
         border-radius: 1em;
@@ -87,8 +67,24 @@
           color: blue;
         }
       }
-      .show {
-        display: block;
+      
+      @media (min-width: 700px) {
+        #Navigation-bar {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+        }
+        #Navigation-menu {
+          display: flex;
+          flex-flow: row nowrap;
+          // background-color:blue;
+        }
+        #User-menu {
+          display: flex;
+        }
+        #Mobile-user,#Lmobile{
+          display:none;
+        }
       }
     </style>
   </head>
