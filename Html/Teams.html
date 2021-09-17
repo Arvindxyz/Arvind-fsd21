@@ -21,8 +21,15 @@
     #Navigation-bar {
      background-color: aquamarine;
     }
-    a:active {
-     background-color: aqua;
+    a{ 
+      text-decoration:none;
+      text-align:center;
+     :hover{
+       cursor:pointer;
+     }
+     :active {
+       background-color: aqua;
+     }
     }
     /* team display area      */
     .Team-display {
@@ -71,6 +78,12 @@
       position: absolute;
       top:20px;
       right:20px;           
+    }
+    @media (min-width:700px){
+      #Team-area{
+        display:flex;
+        flex-flow:row wrap;
+      }
     }
   </style>
 </head>
@@ -140,7 +153,7 @@
         </select>
       <button class="Add-member-btn">Add</button>
     </div>
-    <div class="Team-display" id="ad"><a href="#Add-team">+</a></div>
+    <div class="Team-display" id="Add-team-btn"><a href="#Add-team">+</a></div>
 
     <div id="Add-team">
       <a href="" id="Close-btn">&times;</a>
