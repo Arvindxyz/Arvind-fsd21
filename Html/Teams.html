@@ -51,9 +51,9 @@
    }   
   #Add-team:target {
     display: block;
-    top: 30px;
-    left: 30px;
-    position: absolute;
+   /* top: 30px;
+    left: 30px; . */
+    position: relative;
     width: 100%;
    }
     #Add-team-form {
@@ -143,7 +143,7 @@
     <div class="Team-display" id="ad"><a href="#Add-team">+</a></div>
 
     <div id="Add-team">
-      <a href="" >&times;</a>
+      <a href="" id="Close-btn">&times;</a>
       <form id="Add-team-form">
         <h2>Create Team</h2>
         <label class="Team-input-label">Name<input></label>
