@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-compatibl" content="EI-edge" />
     <title>Navigation</title>
-
     <style>
       body {
         margin: 0;
         padding: 0;
       }
-      * {
-        box-sizing: border-box;
-      }
+
       #Navigation-bar {
         background-color: rgb(150, 150, 150);
         padding: 2em;
@@ -23,7 +20,6 @@
       #Mobile-user {
         padding: 1em;
         border-radius: 1em;
-        width: 100%;
         display: flex;
         justify-content: space-between;
         //  background-color: blue;
@@ -34,6 +30,7 @@
         width: 100%;
         // background-color:red;
       }
+
       #Page-links-btn {
         padding: 1em;
         border-radius: 1em;
@@ -43,7 +40,7 @@
         display: none;
         // background-color:rgb(160,160,160);
       }
-      #Page-links:target{
+      #Page-links:target {
         display: flex;
         flex-flow: column nowrap;
         width: 100%;
@@ -59,32 +56,31 @@
       a {
         color: black;
         text-decoration: none;
-        text-align: center;
+        align-self: center;
         :hover {
           cursor: pointer;
         }
         :active {
-          color: blue;
+          color: aquamarine;
         }
       }
-      
       @media (min-width: 700px) {
         #Navigation-bar {
           display: flex;
           flex-flow: row nowrap;
           justify-content: space-between;
         }
-        #Page-links{
-          padding:1em;
-          display:inline-block;
-          float: left;
+        #Mobile-user,
+        #Lmobile {
+          display: none;
+        }
+        #Page-links {
+          display: flex;
+          flex-flow: row nowrap;
           // background-color:blue;
         }
         #User-menu {
           display: flex;
-        }
-        #Mobile-user,#Lmobile{
-          display:none;
         }
       }
     </style>
