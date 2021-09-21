@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatibl" content="EI-edge" />
+    <title>Navigation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      *{
+        box-sizing:border-box;
+      }
+      #Navigation-bar {
+        background-color: rgb(150, 150, 150);
+        padding: 2em;
+        width: 100%;
+        //position: fixed;
+      }
+      #Mobile-user {
+        padding: 1em;
+        border-radius: 1em;
+        display: flex;
+        justify-content: space-between;
+        //  background-color: blue;
+      }
+      #Navigation-menu {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        // background-color:red;
+      }
+
+      #Page-links-btn {
+        padding: 1em;
+        border-radius: 1em;
+        background-color: rgb(160, 160, 160);
+      }
+      #Page-links {
+        display: none;
+        /* background-color:rgb(160,160,160);  
+      }
+      #Page-links:target {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;*/
+      }
+
+      #User-menu {
+        display: none;
+        text-align: center;
+        // background-color:green;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        text-align:center;
+        :hover {
+          cursor: pointer;
+        }
+        :active {
+          color: aquamarine;
+        }
+      }
+      @media (min-width: 700px) {
+        #Navigation-bar {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+        }
+        #Mobile-user,
+        #Lmobile {
+          display: none;
+        }
+        #Page-links {
+          display: flex;
+          flex-flow: row nowrap;
+          // background-color:blue;
+        }
+        #User-menu {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="Navigation-bar">
+        <div id="Navigation-menu">
+          <div id="Mobile-user">
+            <h1>My meetings</h1>
+            <a href="#Page-links" id="Page-links-btn">=</a>
+          </div>
+          <div id="Page-links">
+            <a href="../Html/Calendar.html">Calendar</a>
+            <hr />
+            <a href="../Html/Meeting.html">Meetings</a>
+            <hr />
+            <a href="../Html/Teams.html">Teams</a>
+            <hr />
+            <!-- id= Lmobile -->
+            <a href="../Html/Index.html" id="Lmobile">Logout</a>
+          </div>
+        </div>
+        <div id="User-menu">
+          <span></span>
+          <a href="../Html/Index.html">Logout</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

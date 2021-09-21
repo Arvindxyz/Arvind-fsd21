@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teams</title>
+ <!-- <link rel="stylesheet" src="./Teams.css">  -->
+  </link>
+  <style>
+   body{
+     margin:0;
+     padding:0;
+   }
+   *{
+     box-sizing:border-box;
+   }
+    #Navigation-menu {
+      margin: 20px;
+      padding: 2em;
+      display: flex;
+    }
+    #Navigation-button {
+     justify-content: flex-end;
+     padding: 2em;
+    }
+    #Navigation-bar {
+     background-color: aquamarine;
+    }
+    a{ 
+      text-decoration:none;
+      text-align:center;
+     :hover{
+       cursor:pointer;
+     }
+     :active {
+       background-color: aqua;
+     }
+    }
+    /* team display area      */
+    .Team-display {
+      border: 1px solid black;
+      margin: 5px;
+      padding: 1em;
+    }
+    .Team-name {
+    }
+    .Team-email {
+     }
+   .Quit-team {
+      background-color: red;
+      border-radius: 1em;
+    }
+   .Team-members {
+    }
+   .Add-member-btn {
+     background-color: aqua;
+     border-radius: 1em;
+   }
+   /*add team div and  form  */
+  #Add-team {
+    display:none;                   background-color: aquamarine;
+    border: 1px solid red;
+   }   
+  #Add-team:target {
+    display:block;
+    top: 30px;
+    left: 0; 
+    position: absolute;
+    width: 100%;
+   }
+    #Add-team-form {
+      margin: 2em;
+      padding: 2em;
+    }
+   .Team-input-label {
+      margin-bottom: 10px;
+    }
+    input {
+      margin-bottom: 10px;
+    }
+    #Close-btn{
+      font-size:30px;
+      position: absolute;
+      top:20px;
+      right:20px;           
+    }
+    #Add-team-btn{     text-align:center;
+    }
+    @media (min-width:700px){
+      #Team-area{
+        display:flex;
+        flex-flow:row wrap;
+      }
+      .Team-display{
+        width:30%;
+      }
+      #Add-team{ display:none;}
+      #Add-team:target #Add-team-form{
+        display:flex;
+        flex-flow:column nowrap;
+      }
+      /*   #Add-team-form{
+        display:flex;
+        flex-flow:column nowrap;
+      }  */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="Navigation-menu">
+        <a href="../Html/Calendar.html" alt="Try after sometime">Calendar</a>
+        <a href="../Html/Meeting.html" alt="Try after sometime">Meeting</a>
+        <a href="">Teams</a>
+      </div>
+      <div id="logout-button">
+        <a href="../Html/Index.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+  <div id="Teams-area">
+    <div class="Team-display">
+      <h3 class="Team-name">Customer acquisition campaign</h3>
+      <h4 class="Team-email">@example.com</h4>
+      <p>Teams to come up with strategies to win over customer at the end of FY21</p>
+      <button class="Quit-team">Excuse yourself</button>
+      <hr />
+      <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
+      <label for="select"></label>
+
+      <select name="member" id="select">
+         <option value="">option 1</option>
+         <option value="">option 2</option>
+         <option value="">option 3</option>
+         <option value="">option 4</option>
+        </select>
+      <button class="Add-member-btn">Add</button>
+    </div>
+    <div class="Team-display">
+      <h3 class="Team-name">Customer acquisition campaign</h3>
+      <h4 class="Team-email">@example.com</h4>
+      <p>Teams to come up with strategies to win over customer at the end of FY21</p>
+      <button class="Quit-team">Excuse yourself</button>
+      <hr />
+      <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
+      <label for="select"></label>
+
+      <select name="member" id="select">
+         <option value="">option 1</option>
+         <option value="">option 2</option>
+         <option value="">option 3</option>
+         <option value="">option 4</option>
+        </select>
+      <button class="Add-member-btn">Add</button>
+    </div>
+    <div class="Team-display">
+      <h3 class="Team-name">Customer acquisition campaign</h3>
+      <h4 class="Team-email">@example.com</h4>
+      <p>Teams to come up with strategies to win over customer at the end of FY21</p>
+      <button class="Quit-team">Excuse yourself</button>
+      <hr />
+      <p class="Team-members"><span>Members: </span>john@example.com,joy@example.com</p>
+      <label for="select"></label>
+
+      <select name="member" id="select">
+         <option value="">option 1</option>
+         <option value="">option 2</option>
+         <option value="">option 3</option>
+         <option value="">option 4</option>
+        </select>
+      <button class="Add-member-btn">Add</button>
+    </div>
+    <div class="Team-display" id="Add-team-btn"><a href="#Add-team">+</a></div>
+
+    <div id="Add-team">
+      <a href="" id="Close-btn">&times;</a>
+      <form id="Add-team-form">
+        <h2>Create Team</h2>
+        <label class="Team-input-label">Name<input></label>
+        <label class="Team-input-label">Short name<input></label>
+        <label class="Team-input-label">Description<input placeholder="text"></label>
+        <br/>
+        <label for="select" class="Team-input-label">Add members<br>
+         <select name="member" id="select">
+           <option value="">option 1</option>
+           <option value="">option 2</option>
+           <option value="">option 3</option>
+           <option value="">option 4</option>
+         </select>
+       <button class="Team-input-label">Add</button>
+       </label>
+        <br/>
+        <button class="Team-input-label">Create</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

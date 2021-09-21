@@ -1,0 +1,85 @@
+body{
+  margin:0;
+  padding:0;
+  background-color:rgb(0,255,204);
+}
+#Login-div{
+  padding:2em;
+  width:100%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.Title{
+  text-align: center;
+}
+
+#Login-form{
+  display:flex;
+  flex-flow: column nowrap;
+}
+.Login-input{
+  margin-bottom:1em;
+}
+#Login-btn{
+  background-color:rgb(200,200,200);
+  text-align: center;
+   border-radius:20px;
+  :hover{cursor:pointer;}
+  :active {color: blue;}
+}
+a{ 
+ text-decoration:none;
+ :hover{
+   cursor:pointer;
+ }
+ :action{
+   color:aquamarine;
+ }
+}
+#Small-font{
+  font-size:13px;
+  display: flex;
+  justify-content:space-between;
+}
+#Forgot-passward-btn{}
+#Signup-div{
+  display:none;
+  position:relative;
+}
+#Close-btn{
+  position: absolute;
+  top:10px;
+  right:10px;
+  font-weight:bold;
+  font-size:30px;
+}
+#Signup-div:target{
+  background-color: aquamarine;
+  position: absolute;
+  top:0;
+  width:100%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+#Signup-form{
+  padding:2em;
+  display:flex;
+  flex-flow: column nowrap;
+  //background-color:rgb(160,200,160);
+}
+#Signup-btn{
+  background-color:rgb(200,200,200);
+  text-align: center;
+  border-radius:20px;
+}
+@media (min-width:600px){
+  body{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}
+
+

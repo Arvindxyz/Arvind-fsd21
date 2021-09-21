@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting pag</title>
+  <link rel="stylesheet" src="../Css/Meeting.css">
+  </link>
+</head>
+
+<body>
+  <header>
+    <nav id="Navigation-header">
+      <div id="Navigation-menu">
+        <a href="../Html/Calendar.html" alt="Try after sometime">Calendar</a>
+        <a href="">Meeting</a>
+        <a href="../Html/Teams.html" alt="Try after sometime">Teams</a>
+      </div>
+      <div id="User-menu">
+        <span id="Present-user "></span>
+        <a src="../Html/Indexx.html" alt="logout">Logout</a>
+      </div>
+    </nav>
+  </header>
+  <div id="Meeting-area">
+    <h1>Meetings</h1>
+    <div>
+      <a href="#Search-meeting">Search meeting</a>
+      <a href="#Add-meeting">Add meeting</a>
+    </div>
+    <div>
+      <h2>Search for meetings</h2>
+      <form id="Search-meeting">
+        <label>Date : 
+      <input type="date">
+      </label>
+        <label>Search for : 
+      <input type="text">
+      </label>
+        <button>Search</button>
+      </form>
+    </div>
+    <div>
+      <form id="Add-meeting">
+        <label>Date : <input type="date"></label>
+        <label>Start time : <input type="time"></label>
+        <label>End time : <input type="time"></label>
+        <label>Description : <input type="text"></label>
+        <label>Email id of attendees or teams short : <input type="email"></label>
+        <button>Add meeting</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

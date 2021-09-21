@@ -1,7 +1,185 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8"  >
-    <meta name="viewport" content  >
- viewport
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatibl" content="EI-edge" />
+
+    <title>Meeting App</title>
+    <!-- <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>   
+  -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0, 255, 204);
+        /* below commented code doesn't  bring content to center/*
+        /*display:flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+        */
+      }
+      *{
+        box-sizing:border-box;
+      }
+      #Login-div {
+        padding:1em;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+      }
+      .Title {
+        text-align: center;
+      }
+
+      #Login-form {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+      }
+      .Login-input {
+        margin-bottom: 1em;
+        padding: 5px;
+      }
+      #Login-btn {
+        background-color: rgb(200, 200, 200);
+        text-align: center;
+        border-radius: 20px;
+        :hover {
+          cursor: pointer;
+        }
+        :active {
+          color: blue;
+        }
+      }
+      a {
+        text-decoration: none;
+        :hover {
+          cursor: pointer;
+        }
+        :action {
+          color: aquamarine;
+        }
+      }
+      #Small-font {
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #Forgot-passward-btn {
+      }
+      #Signup-div {
+        display: none;
+      }
+      #Close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      #Signup-div:target {
+        background-color: aquamarine;
+        width: 100%;
+        position:absolute;
+        top:0;
+        overflow:scroll;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+      }
+      #Signup-form {
+        margin: 0;
+        padding: 2em;
+        display: flex;
+        flex-flow: column nowrap;
+        //background-color:rgb(160,200,160);
+      }
+      #Signup-btn {
+        background-color: rgb(200, 200, 200);
+        text-align: center;
+        border-radius: 20px;
+      }
+      @media (min-width: 700px) {
+        body {
+          /*display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          */
+        }
+        #Login-div {
+          margin: auto;
+          max-width: 700px;
+        }
+        #Signup-div {
+          position:absolute;
+          top:0;
+          right:20%;
+          max-width:700px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Login-div">
+      <h1 class="Title">Meeting app</h1>
+      <form id="Login-form" name="loginform" action="">
+        <label for="LoginEmail">Enter your email</label>
+        <input
+          class="Login-input"
+          id="LoginEmail"
+          type="email"
+          placeholder="Email"
+          name="LoginEmail"
+          autofocus
+        />
+        <label for="LoginPassward">Enter your password</label>
+        <input
+          class="Login-input"
+          id="LoginPassward"
+          type="password"
+          placeholder="password"
+          name="LoginPassward"
+        />
+
+        <a href="../Html/Calendar.html" class="Login-input" id="Login-btn"
+          >login
+        </a>
+      </form>
+      <div id="Small-font">
+        <a href="" alt="Signin" id="Forgot-passward-btn">forgot password</a>
+        <a href="#Signup-div">New User - signup</a>
+      </div>
+    </div>
+    <div id="Signup-div">
+      <h2 class="Title">Meeting app</h2>
+      <a href="#" id="Close-btn">&times;</a>
+      <form id="Signup-form">
+        <label for="Signup-email">Enter your email</label>
+        <input
+          id="Signup-email"
+          class="Login-input"
+          type="email"
+          placeholder="Email"
+        />
+        <label for="Signup-passward">Enter password</label>
+        <input
+          id="Signup-passward"
+          class="Login-input"
+          type="password"
+          placeholder="password"
+        />
+        <label for="Signup-Cpassward">Confirm password</label>
+        <input
+          id="Signup-Cpassward"
+          class="Login-input"
+          type="password"
+          placeholder="Confirm password"
+        />
+        <a href="#Login-div" id="Signup-btn" class="Login-input">Signup</a>
+      </form>
+    </div>
+  </body>
 </html>
